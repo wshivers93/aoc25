@@ -59,6 +59,8 @@ jobs:
 
     - name: Install zig
       uses: mlugg/setup-zig@v2
+      with:
+        version: 0.15.2
 
     # Add any setup steps before running the `github/codeql-action/init` action.
     # This includes steps like installing compilers or runtimes (`actions/setup-node`

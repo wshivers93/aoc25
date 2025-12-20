@@ -1,10 +1,13 @@
 const std = @import("std");
 const aoc25 = @import("aoc25");
+const day1 = @import("day1.zig").day1;
 
 pub fn main() !void {
     // Prints to stderr, ignoring potential errors.
     std.debug.print("All your {s} are belong to us.\n", .{"codebase"});
     try aoc25.bufferedPrint();
+
+    day1();
 }
 
 test "simple test" {
